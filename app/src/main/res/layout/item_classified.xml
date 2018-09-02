@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/item_classified_layout"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true">
+
+        <FrameLayout
+            android:id="@+id/item_classified_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="1dp"
+            android:background="@color/lightGray"
+            >
+            <ImageView
+                android:id="@+id/item_classified_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:background="@color/white"
+                />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/item_classified_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_classified_frame"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_toRightOf="@+id/item_classified_frame"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/item_classified_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/item_classified_name"
+            android:layout_below="@+id/item_classified_name"
+            android:textColor="@color/darkGray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_classified_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/item_classified_introduction"
+            android:layout_below="@+id/item_classified_introduction"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/blue"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_classified_salary_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/item_classified_job"
+            android:layout_below="@+id/item_classified_job"
+            android:textColor="@color/darkGray"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+</FrameLayout>

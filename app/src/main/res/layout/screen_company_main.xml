@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="kr.soen.connectup4.CompanySide">
+
+    <FrameLayout
+        android:id="@+id/companyContentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/companyMenuLine"
+        />
+    <View
+        android:id="@+id/companyMenuLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/company_bottom_navigation"
+        android:background="@color/colorPrimaryDark"
+        />
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/company_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:itemTextColor="@drawable/nav_item_color_state"
+        app:elevation="30dp"
+        app:menu="@menu/bottom_navigation_menu_company"
+        />
+</RelativeLayout>
+

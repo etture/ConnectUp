@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/item_event_layout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true">
+
+        <FrameLayout
+            android:id="@+id/item_event_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="1dp"
+            android:background="@color/lightGray"
+            >
+            <ImageView
+                android:id="@+id/item_event_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:background="@color/white"
+                />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/item_event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_event_frame"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_toRightOf="@+id/item_event_frame"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/item_event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/item_event_name"
+            android:layout_below="@+id/item_event_name"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/darkGray"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/item_event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/item_event_date"
+            android:layout_below="@+id/item_event_date"
+            android:textColor="@color/darkGray"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+</FrameLayout>

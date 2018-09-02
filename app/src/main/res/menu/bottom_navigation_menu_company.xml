@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/company_action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="홈"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/company_action_tab2"
+        android:enabled="true"
+        android:title="채용공고"
+        android:icon="@drawable/ic_classified"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/company_action_tab3"
+        android:enabled="true"
+        android:title="행사정보"
+        android:icon="@drawable/ic_event"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/company_action_tab4"
+        android:enabled="true"
+        android:title="게시판"
+        android:icon="@drawable/ic_bulletin"
+        app:showAsAction="ifRoom"/>
+</menu>

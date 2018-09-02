@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.soen.connectup4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_connectup"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".LogIn"></activity>
+        <activity android:name=".StudentSignUp"></activity>
+        <activity android:name=".MyInfoPage"></activity>
+        <activity android:name=".StudentSide"></activity>
+        <activity android:name=".CompanySide"></activity>
+        <activity android:name=".CompanySignUp"></activity>
+        <activity android:name=".CompanyMyInfoPage"></activity>
+        <activity android:name=".StudentClassifiedPage"></activity>
+        <activity android:name=".StudentEventPage"></activity>
+        <activity android:name=".StudentBulletinPage"></activity>
+        <activity android:name=".StudentBulletinListPage"></activity>
+
+    </application>
+
+</manifest>
